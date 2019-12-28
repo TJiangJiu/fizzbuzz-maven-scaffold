@@ -1,10 +1,11 @@
-import org.fest.assertions.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
 import java.util.Collection;
+
+import static org.fest.assertions.api.Assertions.assertThat;
 
 @RunWith(Parameterized.class)
 public class PrintNumberGameTest {
@@ -27,7 +28,7 @@ public class PrintNumberGameTest {
 
     @Test
     public void test() {
-        Assertions.assertThat(PrintNumberGame.printNumber(number)).isEqualTo(expected);
+        assertThat(PrintNumberGame.printNumber(number)).isEqualTo(expected);
     }
 }
 
